@@ -1,21 +1,8 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "motion/react";
 import { Sparkles, Music, GraduationCap, Heart, Star, BookOpen, Award, Users } from "lucide-react";
 import shreyanshiPhoto from "@/assets/shreyanshi.jpeg";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Shreyanshi Singh — Dancer, Student & Little Teacher" },
-      { name: "description", content: "The personal profile of Shreyanshi Singh, a Class 4 student at Sona Modern Public School with a passion for dance and teaching." },
-      { property: "og:title", content: "Shreyanshi Singh — Personal Profile" },
-      { property: "og:description", content: "Dancer, student, and little teacher. Discover Shreyanshi's world." },
-    ],
-  }),
-  component: Index,
-});
-
-function Index() {
+export default function App() {
   return (
     <div className="min-h-screen bg-gradient-hero overflow-hidden">
       {/* Nav */}
